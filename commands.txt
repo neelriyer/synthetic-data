@@ -1,0 +1,6 @@
+find . -size +25MB | cat > .gitignore
+
+
+git filter-branch --tree-filter 'rm -rf Temp/__Backupscenes/0.backup' HEAD
+
+

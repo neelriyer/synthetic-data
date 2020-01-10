@@ -1,0 +1,111 @@
+screen_768x768_205.png, bottom_left6 (5), 3341.292,-385.244
+screen_768x768_205.png, bottom_left6 (4), 3367.295,-392.9485
+screen_768x768_205.png, bottom_left6 (3), 3397.326,-393.299
+screen_768x768_205.png, bottom_left6 (2), 3424.467,-402.6671
+screen_768x768_205.png, bottom_left6 (1), 3451.521,-410.0218
+screen_768x768_205.png, bottom_left6, 3476.037,-419.5651
+screen_768x768_205.png, bottom_left5 (7), 3586.879,-472.2719
+screen_768x768_205.png, bottom_left5 (6), 3613.32,-485.23
+screen_768x768_205.png, bottom_left5 (5), 3641.775,-500.4641
+screen_768x768_205.png, bottom_left5 (4), 3671.543,-516.9244
+screen_768x768_205.png, bottom_left5 (3), 3699.648,-530.6702
+screen_768x768_205.png, bottom_left5 (2), 3730.292,-545.6417
+screen_768x768_205.png, bottom_left5 (1), 3757.871,-560.3507
+screen_768x768_205.png, bottom_left5, 3788.164,-575.1473
+screen_768x768_205.png, bottom_left4 (8), 1919.161,47.79522
+screen_768x768_205.png, bottom_left4 (7), 1912.157,78.8765
+screen_768x768_205.png, bottom_left4 (6), 1896.222,136.2242
+screen_768x768_205.png, bottom_left4 (5), 1889.744,164.9418
+screen_768x768_205.png, bottom_left4 (4), 1881.076,196.636
+screen_768x768_205.png, bottom_left4 (3), 1874.86,224.0403
+screen_768x768_205.png, bottom_left4 (2), 1865.842,252.7577
+screen_768x768_205.png, bottom_left4 (1), 1858.662,282.3508
+screen_768x768_205.png, bottom_left4, 1852.358,310.1051
+screen_768x768_205.png, bottom_left3 (9), 2534.75,438.9837
+screen_768x768_205.png, bottom_left3 (8), 2566.532,445.6379
+screen_768x768_205.png, bottom_left3 (7), 2595.074,451.5916
+screen_768x768_205.png, bottom_left3 (6), 2629.482,458.7709
+screen_768x768_205.png, bottom_left3 (5), 2661.615,465.5126
+screen_768x768_205.png, bottom_left3 (4), 2695.323,472.5168
+screen_768x768_205.png, bottom_left3 (3), 2727.98,479.3461
+screen_768x768_205.png, bottom_left3 (2), 2765.015,498.8703
+screen_768x768_205.png, bottom_left3 (1), 2790.931,517.6068
+screen_768x768_205.png, bottom_left3, 2817.985,534.5923
+screen_768x768_205.png, bottom_left2 (11), 2873.494,705.9342
+screen_768x768_205.png, bottom_left2 (10), 2845.827,700.1556
+screen_768x768_205.png, bottom_left2 (9), 2818.51,694.4647
+screen_768x768_205.png, bottom_left2 (8), 2789.355,686.1472
+screen_768x768_205.png, bottom_left2 (7), 2762.126,679.9308
+screen_768x768_205.png, bottom_left2 (6), 2733.321,673.8897
+screen_768x768_205.png, bottom_left2 (5), 2703.465,667.6733
+screen_768x768_205.png, bottom_left2 (4), 2677.462,662.245
+screen_768x768_205.png, bottom_left2 (3), 2647.781,654.3652
+screen_768x768_205.png, bottom_left2 (2), 2618.976,647.7988
+screen_768x768_205.png, bottom_left2 (1), 2590.609,641.845
+screen_768x768_205.png, bottom_left2, 2562.942,636.0665
+screen_768x768_205.png, bottom_left1 (7), 2614.073,1018.412
+screen_768x768_205.png, bottom_left1 (9), 2659.076,1000.201
+screen_768x768_205.png, bottom_left1 (6), 2587.632,1018.675
+screen_768x768_205.png, bottom_left1 (3), 2499.028,999.1505
+screen_768x768_205.png, bottom_left1, 2407.272,977.1747
+screen_768x768_205.png, bottom_left1 (2), 2466.721,991.7961
+screen_768x768_205.png, bottom_left1 (5), 2560.753,1013.159
+screen_768x768_205.png, bottom_left1 (4), 2529.584,1006.067
+screen_768x768_205.png, bottom_left1 (8), 2637.712,1009.307
+screen_768x768_205.png, bottom_left1 (1), 2436.865,985.0545
+screen_768x768_205.png, top_right6 (5), 3381.304,-337.5276
+screen_768x768_205.png, top_right6 (4), 3408.095,-342.2554
+screen_768x768_205.png, top_right6 (3), 3437.951,-349.96
+screen_768x768_205.png, top_right6 (2), 3463.604,-354.3376
+screen_768x768_205.png, top_right6 (1), 3494.16,-365.457
+screen_768x768_205.png, top_right6, 3519.288,-379.4656
+screen_768x768_205.png, top_right5 (7), 3638.711,-437.2507
+screen_768x768_205.png, top_right5 (6), 3667.253,-451.0842
+screen_768x768_205.png, top_right5 (5), 3696.846,-467.1063
+screen_768x768_205.png, top_right5 (4), 3723.988,-480.4146
+screen_768x768_205.png, top_right5 (3), 3755.77,-495.7366
+screen_768x768_205.png, top_right5 (2), 3781.686,-511.2333
+screen_768x768_205.png, top_right5 (1), 3813.205,-526.4677
+screen_768x768_205.png, top_right5, 3842.097,-537.7619
+screen_768x768_205.png, top_right4 (9), 1980.799,31.59789
+screen_768x768_205.png, top_right4 (8), 1973.707,63.02934
+screen_768x768_205.png, top_right4 (7), 1966.966,92.71021
+screen_768x768_205.png, top_right4 (6), 1960.487,121.2523
+screen_768x768_205.png, top_right4 (5), 1951.119,149.795
+screen_768x768_205.png, top_right4 (4), 1944.552,178.8625
+screen_768x768_205.png, top_right4 (3), 1936.322,209.944
+screen_768x768_205.png, top_right4 (2), 1930.106,237.2606
+screen_768x768_205.png, top_right4 (1), 1920.475,268.8676
+screen_768x768_205.png, top_right4, 1914.346,296.0092
+screen_768x768_205.png, top_right3 (9), 2554.624,500.7964
+screen_768x768_205.png, top_right3 (8), 2585.443,507.2753
+screen_768x768_205.png, top_right3 (7), 2619.063,514.2798
+screen_768x768_205.png, top_right3 (6), 2649.357,520.5836
+screen_768x768_205.png, top_right3 (5), 2681.227,527.2377
+screen_768x768_205.png, top_right3 (4), 2711.345,534.6796
+screen_768x768_205.png, top_right3 (3), 2733.671,545.7988
+screen_768x768_205.png, top_right3 (2), 2759.762,562.7844
+screen_768x768_205.png, top_right3 (1), 2783.489,580.0323
+screen_768x768_205.png, top_right3, 2805.552,599.6443
+screen_768x768_205.png, top_right2 (11), 2888.466,768.7101
+screen_768x768_205.png, top_right2 (10), 2861.236,763.019
+screen_768x768_205.png, top_right2 (9), 2831.906,756.8903
+screen_768x768_205.png, top_right2 (8), 2806.778,749.2732
+screen_768x768_205.png, top_right2 (7), 2776.747,742.9692
+screen_768x768_205.png, top_right2 (6), 2748.73,736.578
+screen_768x768_205.png, top_right2 (5), 2719.663,730.5367
+screen_768x768_205.png, top_right2 (4), 2692.346,723.0946
+screen_768x768_205.png, top_right2 (3), 2663.891,717.1411
+screen_768x768_205.png, top_right2 (2), 2635.699,710.0493
+screen_768x768_205.png, top_right2 (1), 2607.332,704.0956
+screen_768x768_205.png, top_right2, 2577.651,697.8793
+screen_768x768_205.png, top_right1 (7), 2659.601,1063.065
+screen_768x768_205.png, top_right1 (2), 2485.807,1054.222
+screen_768x768_205.png, top_right1 (5), 2583.429,1075.585
+screen_768x768_205.png, top_right1 (1), 2453.413,1047.48
+screen_768x768_205.png, top_right1 (6), 2623.704,1073.308
+screen_768x768_205.png, top_right1 (3), 2516.889,1061.576
+screen_768x768_205.png, top_right1, 2422.681,1041.089
+screen_768x768_205.png, top_right1 (9), 2721.851,1019.2
+screen_768x768_205.png, top_right1 (4), 2549.283,1069.193
+screen_768x768_205.png, top_right1 (8), 2694.972,1043.015

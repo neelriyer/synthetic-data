@@ -1,0 +1,56 @@
+Summary Info for outdoor_roads.max (at Frame 0)
+
+Objects:
+  				Cast	Receive	Motion			Generate	Receive	Generate	Receive	
+  Name	Type	Verts	Faces	Shadows	Shadows	Blur	Hidden	Frozen	Caustics	Caustics	GlobIllum	GlobIllum	Material (Type)
+  ------------------------	------------	------------	------------	------------	------------	------------	------------	------------	------------	------------	------------	------------	------------------------
+  Box01	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	01 - Default (Standard)
+  Box02	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	01 - Default (Standard)
+  Box03	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	02 - Default (Standard)
+  Box04	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box06	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box10	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box12	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box14	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box15	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box16	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box17	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box18	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Box19	Editable	8	12	Yes	Yes	No	No	No	No	Yes	Yes	Yes	03 - Default (Standard)
+  Foliage01	Editable	981	1641	Yes	Yes	No	No	No	No	Yes	Yes	Yes	07 - Default (Standard)
+
+
+Scene Totals:
+  Objects: 14
+  Shapes: 0
+  Cameras: 0
+  Lights: 0
+  Helpers: 0
+  Space Warps: 0
+  Total: 14
+
+Mesh Totals:
+
+  Verts: 1085
+  Faces: 1797
+Materials:
+
+  01 - Default  ( Standard )
+         F:\VARIOUS_BACKUPS!\Run3v0.72\approach\road.png
+
+  02 - Default  ( Standard )
+         F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\road\AsphaltVarious0029_2_S.jpg
+
+  03 - Default  ( Standard )
+         F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\road\AsphaltVarious0018_7_S.jpg
+
+  07 - Default  ( Standard )
+         F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\nature\BarkPine0015_S.jpg
+
+
+Other Maps:
+F:\VARIOUS_BACKUPS!\Run3v0.72\approach\road.png
+F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\road\AsphaltVarious0029_2_S.jpg
+F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\road\AsphaltVarious0018_7_S.jpg
+F:\VARIOUS_BACKUPS!\Run3v0.72\run3\mats\nature\BarkPine0015_S.jpg
+

@@ -1,0 +1,23 @@
+notes
+-----
+
+image:
+730 pixels across
+531 pixels from bottom
+
+scene:
+start = 92.39999, -93
+upper0 = -83.10002, 64
+
+so:
+(92.39999+83.10002) units across
+(93+64) units from bottom
+
+
+therefore:
+175.50001 units = 730 pixels
+1 unit = 730/175.50001 pixels
+
+157 units = 531 pixels
+1 unit = 531/157 pixels
+
