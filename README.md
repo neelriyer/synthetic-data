@@ -7,9 +7,9 @@ Dataset can be found in [here](https://github.com/spiyer99/synthetic-data-creati
 
 # Screenshots
 
-![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_10.jpg)
-![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_1.jpg)
-![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_27.jpg)
+![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_10.png)
+![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_1.png)
+![img](https://raw.githubusercontent.com/spiyer99/synthetic-data-creation/master/Assets/screenshots/screen_768x768_27.png)
 
 
  
