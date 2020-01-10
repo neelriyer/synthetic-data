@@ -43,11 +43,11 @@ def convert_txt_to_pandas(file):
 	#print(top_right.head())
 
 	# merge on ekey
-	merged = bottom_left.merge(top_right, left_on='key', right_on='key', suffixes=('_bottom_left', '_top_right'))
+	merged = bottom_left.merge(top_right, left_on=['key', 'filename'], right_on=['key','filename'], suffixes=('_bottom_left', '_top_right'))
 	#print(merged)
 
 	# add class
-	merged['class'] = 'parkinglot'
+	merged['class'] = 'parkinglot' 
 
 	# rename cols
 	merged.rename(columns={"filename_bottom_left": "filename", 
@@ -98,5 +98,9 @@ if os.path.exists(os.getcwd()+'/dataset.csv'):
 
 # write to csv
 df.to_csv(os.getcwd()+'/dataset.csv', header=True, index=None, sep=',', mode='a')
+
+
+
+#print(df.head())
 
 
