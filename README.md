@@ -2,9 +2,9 @@
 Using unity to create synthetic datasets for detection of parkinglots from satellite imagery
 
 # Dataset
-Dataset can be found in [here](https://github.com/spiyer99/synthetic-data/tree/master/Assets/dataset.csv)
+Dataset: synthetic-data/tree/master/Assets/dataset.csv (https://github.com/spiyer99/synthetic-data/tree/master/Assets/dataset.csv)
 
-New Dataset with json column and new ID created can be found in [here](https://github.com/spiyer99/synthetic-data/tree/master/Assets/dataset_with_json_column_and_id_added.csv)
+New Dataset with json column and new ID created: synthetic-data/tree/master/Assets/dataset_with_json_column_and_id_added.csv (https://github.com/spiyer99/synthetic-data/tree/master/Assets/dataset_with_json_column_and_id_added.csv)
 
 # Screenshots
 
