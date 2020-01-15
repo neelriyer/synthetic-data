@@ -31,6 +31,7 @@ import json
 import math
 import uuid
 import os
+import csv
 
 
 df = pd.read_csv('dataset.csv')
@@ -126,7 +127,16 @@ def geometry_calculator(bottom_left_x, bottom_left_y, top_right_x, top_right_y, 
 
 					]\
 
-			print(result)
+			#print(result)
+
+		# convert to string
+		result = str(result)
+
+		# replace ' with "
+		# result = result.replace("'", '"')
+
+	
+		# return json.dumps(result)
 
 	return result
 
@@ -143,6 +153,11 @@ df['Label'] = df.apply(lambda row: geometry_calculator(bottom_left_x = row['bott
 														top_left_y = row['top_left_y'],\
 														top_left_x = row['top_left_x']), axis = 1)
 
+
+
+# convert to json
+# df['Label'] = df['Label'].apply(lambda x: x if x =='Skip' else json.loads(x))
+
 # make new cols
 df['ID'] = 'test'
 df['ID'] = df['ID'].apply(lambda text: uuid.uuid4())
@@ -154,14 +169,17 @@ select_cols = ['ID', 'Label', 'External ID']
 df = df[select_cols]
 
 print(df.columns)
-print(df['Label'].value_counts())
-print(df.head())
+
 
 # remove csv if file exists
 if os.path.exists('dataset_with_json_column_and_id_added.csv'):
 	os.remove('dataset_with_json_column_and_id_added.csv')
 
 # write to csv
+
+print(df['Label'].head(50))
+#df.to_csv('dataset_with_json_column_and_id_added.csv', header=True, index=None, sep=',', mode='a', quoting = csv.QUOTE_NONE,escapechar='\\')
+
 df.to_csv('dataset_with_json_column_and_id_added.csv', header=True, index=None, sep=',', mode='a')
 
 
