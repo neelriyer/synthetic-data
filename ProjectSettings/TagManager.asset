@@ -6,6 +6,7 @@ TagManager:
   tags:
   - top_right
   - bottom_right
+  - bottom_left
   layers:
   - Default
   - TransparentFX
