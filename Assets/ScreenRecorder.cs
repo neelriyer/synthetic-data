@@ -95,7 +95,6 @@ using UnityEngine;
         cam = GetComponent<Camera>();
 
         //BOTTOM LEFT
-
         //create list
         GameObject[] bottom_left;
         bottom_left = GameObject.FindGameObjectsWithTag ("bottom_left");
@@ -104,7 +103,7 @@ using UnityEngine;
         Vector3[] screen_shot_pos_left = new Vector3[bottom_left.Length];
 
         // record names of bottom left coords
-        string[] names_left = new string[bottom_left.Length];
+        string[] names_bottom_left = new string[bottom_left.Length];
 
         // iterate through all bottom left points
         for (int i=0;i<bottom_left.Length;i++)
@@ -113,9 +112,9 @@ using UnityEngine;
               screen_shot_pos_left[i] = cam.WorldToScreenPoint(bottom_left[i].transform.position);
 
               // records names into arr
-              names_left[i] = bottom_left[i].name;
+              names_bottom_left[i] = bottom_left[i].name;
 
-              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_left[i], names_left[i]));
+              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_left[i], names_bottom_left[i]));
         }
 
         // initialise serialized data string
@@ -124,9 +123,8 @@ using UnityEngine;
         // prep serialized data string
         for (int i=0;i<screen_shot_pos_left.Length;i++)
         {
-            serializedData = serializedData + filename + ", " + names_left[i] + ", " + screen_shot_pos_left[i].x + "," + screen_shot_pos_left[i].y + "\n";
+            serializedData = serializedData + filename + ", " + names_bottom_left[i] + ", " + screen_shot_pos_left[i].x + "," + screen_shot_pos_left[i].y + "\n";
         } 
-
 
         
         //TOP RIGHT
@@ -138,7 +136,7 @@ using UnityEngine;
         Vector3[] screen_shot_pos_right = new Vector3[top_right.Length];
 
         // record names of bottom left coords
-        string[] names_right = new string[top_right.Length];
+        string[] names_top_right = new string[top_right.Length];
 
         // iterate through all bottom left points
         for (int i=0;i<top_right.Length;i++)
@@ -147,67 +145,83 @@ using UnityEngine;
               screen_shot_pos_right[i] = cam.WorldToScreenPoint(top_right[i].transform.position);
 
               // records names into arr
-              names_right[i] = top_right[i].name;
+              names_top_right[i] = top_right[i].name;
 
-              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_right[i], names_right[i]));  
+              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_right[i], names_top_right[i]));  
              
         }
 
         // prep serialized data string
         for (int i=0;i<screen_shot_pos_right.Length;i++)
         {
-            serializedData = serializedData + filename + ", " + names_right[i] + ", " + screen_shot_pos_right[i].x + "," + screen_shot_pos_right[i].y + "\n";
+            serializedData = serializedData + filename + ", " + names_top_right[i] + ", " + screen_shot_pos_right[i].x + "," + screen_shot_pos_right[i].y + "\n";
         } 
 
 
-        //get coordinates for eachc centroid
+        //TOP LEFT
+        //create list
+        GameObject[] top_left;
+        top_left = GameObject.FindGameObjectsWithTag ("top_left");
 
-        /*
-        Vector3 bl1 = cam.WorldToScreenPoint(GameObject.Find("bl1").transform.position);
-        Vector3 bl1_1 = cam.WorldToScreenPoint(GameObject.Find("bl1 (1)").transform.position);
-        Vector3 bl1_2 = cam.WorldToScreenPoint(GameObject.Find("bl1 (2)").transform.position);
-        Vector3 bl1_3 = cam.WorldToScreenPoint(GameObject.Find("bl1 (3)").transform.position);
-        Vector3 bl1_4 = cam.WorldToScreenPoint(GameObject.Find("bl1 (4)").transform.position);
-        Vector3 bl1_5 = cam.WorldToScreenPoint(GameObject.Find("bl1 (5)").transform.position);
-        Vector3 bl1_6 = cam.WorldToScreenPoint(GameObject.Find("bl1 (6)").transform.position);
-        Vector3 bl1_7 = cam.WorldToScreenPoint(GameObject.Find("bl1 (7)").transform.position);
-        Vector3 bl1_8 = cam.WorldToScreenPoint(GameObject.Find("bl1 (8)").transform.position);
+        // record pos of bottom left coords
+        Vector3[] screen_shot_pos_top_left = new Vector3[top_left.Length];
 
-        Vector3 tr1 = cam.WorldToScreenPoint(GameObject.Find("tr1").transform.position);
-        Vector3 tr1_1 = cam.WorldToScreenPoint(GameObject.Find("tr1 (1)").transform.position);
-        Vector3 tr1_2 = cam.WorldToScreenPoint(GameObject.Find("tr1 (2)").transform.position);
-        Vector3 tr1_3 = cam.WorldToScreenPoint(GameObject.Find("tr1 (3)").transform.position);
-        Vector3 tr1_4 = cam.WorldToScreenPoint(GameObject.Find("tr1 (4)").transform.position);
-        Vector3 tr1_5 = cam.WorldToScreenPoint(GameObject.Find("tr1 (5)").transform.position);
-        Vector3 tr1_6 = cam.WorldToScreenPoint(GameObject.Find("tr1 (6)").transform.position);
-        Vector3 tr1_7 = cam.WorldToScreenPoint(GameObject.Find("tr1 (7)").transform.position);
-        Vector3 tr1_8 = cam.WorldToScreenPoint(GameObject.Find("tr1 (8)").transform.position);
-        Vector3 tr1_9 = cam.WorldToScreenPoint(GameObject.Find("tr1 (9)").transform.position);
+        // record names of bottom left coords
+        string[] names_top_left = new string[top_left.Length];
 
-         string serializedData = 
-     filename + ", " + "bl1, " + bl1.x + "," + bl1.y + "\n" +
-     filename + ", " + "bl1_1, " + bl1_1.x + "," + bl1_1.y + "\n" +
-     filename + ", " + "bl1_2, " + bl1_2.x + "," + bl1_2.y + "\n" + 
-     filename + ", " + "bl1_3, " + bl1_3.x + "," + bl1_3.y + "\n" +
-     filename + ", " + "bl1_3, " + bl1_3.x + "," + bl1_3.y + "\n" +
-     filename + ", " + "bl1_4, " + bl1_4.x + "," + bl1_4.y + "\n" +
-     filename + ", " + "bl1_5, " + bl1_5.x + "," + bl1_5.y + "\n" +
-     filename + ", " + "bl1_6, " + bl1_6.x + "," + bl1_6.y + "\n" + 
-     filename + ", " + "bl1_7, " + bl1_7.x + "," + bl1_7.y + "\n" +
-     filename + ", " + "bl1_8, " + bl1_8.x + "," + bl1_8.y + "\n" +
+        // iterate through all bottom left points
+        for (int i=0;i<top_left.Length;i++)
+        {
+              // convert coords to camera coords
+              screen_shot_pos_top_left[i] = cam.WorldToScreenPoint(top_left[i].transform.position);
 
-     filename + ", " + "tr1, " + tr1.x + "," + tr1.y + "\n" +
-     filename + ", " + "tr1_1, " + tr1_1.x + "," + tr1_1.y + "\n" +
-     filename + ", " + "tr1_2, " + tr1_2.x + "," + tr1_2.y + "\n" + 
-     filename + ", " + "tr1_3, " + tr1_3.x + "," + tr1_3.y + "\n" +
-     filename + ", " + "tr1_3, " + tr1_3.x + "," + tr1_3.y + "\n" +
-     filename + ", " + "tr1_4, " + tr1_4.x + "," + tr1_4.y + "\n" +
-     filename + ", " + "tr1_5, " + tr1_5.x + "," + tr1_5.y + "\n" +
-     filename + ", " + "tr1_6, " + tr1_6.x + "," + tr1_6.y + "\n" + 
-     filename + ", " + "tr1_7, " + tr1_7.x + "," + tr1_7.y + "\n" +
-     filename + ", " + "tr1_8, " + tr1_8.x + "," + tr1_8.y + "\n";
-        */
+              // records names into arr
+              names_top_left[i] = top_left[i].name;
 
+              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_top_left[i], names_top_left[i]));  
+             
+        }
+
+        // prep serialized data string
+        for (int i=0;i<screen_shot_pos_top_left.Length;i++)
+        {
+            serializedData = serializedData + filename + ", " + names_top_left[i] + ", " + screen_shot_pos_top_left[i].x + "," + screen_shot_pos_top_left[i].y + "\n";
+        } 
+
+
+        //BOTTOM RIGHT
+        //create list
+        GameObject[] bottom_right;
+        bottom_right = GameObject.FindGameObjectsWithTag ("bottom_right");
+
+        // record pos of bottom left coords
+        Vector3[] screen_shot_pos_bottom_right = new Vector3[bottom_right.Length];
+
+        // record names of bottom left coords
+        string[] names_bottom_right = new string[bottom_right.Length];
+
+        // iterate through all bottom left points
+        for (int i=0;i<bottom_right.Length;i++)
+        {
+              // convert coords to camera coords
+              screen_shot_pos_bottom_right[i] = cam.WorldToScreenPoint(bottom_right[i].transform.position);
+
+              // records names into arr
+              names_bottom_right[i] = bottom_right[i].name;
+
+              //Debug.Log(string.Format("position = {0},  name = {1}", screen_shot_pos_bottom_right[i], names_bottom_right[i]));  
+             
+        }
+
+        // prep serialized data string
+        for (int i=0;i<screen_shot_pos_bottom_right.Length;i++)
+        {
+            serializedData = serializedData + filename + ", " + names_bottom_right[i] + ", " + screen_shot_pos_bottom_right[i].x + "," + screen_shot_pos_bottom_right[i].y + "\n";
+        } 
+
+
+
+        //  write to txt
         System.IO.File.WriteAllText("Assets/data/"+filename+".txt", serializedData);
 
      } 

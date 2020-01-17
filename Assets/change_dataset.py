@@ -37,20 +37,20 @@ import csv
 df = pd.read_csv('dataset.csv')
 
 # bottom left
-df['bottom_left_x'] = df['x_start'].apply(lambda x: [x])
-df['bottom_left_y'] = df['y_start'].apply(lambda x: [x])
+df['bottom_left_x'] = df['x_bottom_left'].apply(lambda x: [x])
+df['bottom_left_y'] = df['y_bottom_left'].apply(lambda x: [x])
 
 # top right
-df['top_right_x'] = df['x_finish'].apply(lambda x: [x])
-df['top_right_y'] = df['y_finish'].apply(lambda x: [x])
+df['top_right_x'] = df['x_top_right'].apply(lambda x: [x])
+df['top_right_y'] = df['y_top_right'].apply(lambda x: [x])
 
 # top left
-df['top_left_x'] = df['x_start'].apply(lambda x: [x])
-df['top_left_y'] = df['y_finish'].apply(lambda x: [x])
+df['top_left_x'] = df['x_top_left'].apply(lambda x: [x])
+df['top_left_y'] = df['y_top_left'].apply(lambda x: [x])
 
 # bottom right
-df['bottom_right_x'] = df['x_finish'].apply(lambda x: [x])
-df['bottom_right_y'] = df['y_start'].apply(lambda x: [x])
+df['bottom_right_x'] = df['x_bottom_right'].apply(lambda x: [x])
+df['bottom_right_y'] = df['y_bottom_right'].apply(lambda x: [x])
 
 
 # grouped_df=df.groupby('filename',as_index=False).agg({'x_start':','.join,'y_start':','.join})
@@ -67,7 +67,6 @@ df = df.groupby('filename').agg({'bottom_left_x': 'sum', \
 										})
 
 
-
 def geometry_calculator(bottom_left_x, bottom_left_y, top_right_x, top_right_y, bottom_right_y, bottom_right_x, top_left_y, top_left_x):
 
 	# sanity check
@@ -79,13 +78,7 @@ def geometry_calculator(bottom_left_x, bottom_left_y, top_right_x, top_right_y, 
 
 		result = {\
 			  
-					"Bay": [
-			  	
-				  		{
-				  			'geometry': []
-				  		}
-
-			  		]
+					"Bay": [{} for i in range(len(bottom_left_x))]
 			  }
 
 		#result['Bay'][0]['geometry'] = []
@@ -93,20 +86,19 @@ def geometry_calculator(bottom_left_x, bottom_left_y, top_right_x, top_right_y, 
 		for i in range(len(bottom_left_x)):
 
 			# get values
-			bl_x_val = str(bottom_left_x[i])
-			bl_y_val = str(bottom_left_y[i])
+			bl_x_val = int(bottom_left_x[i])
+			bl_y_val = int(bottom_left_y[i])
 
-			tr_x_val = str(top_right_x[i])
-			tr_y_val = str(top_right_y[i])
+			tr_x_val = int(top_right_x[i])
+			tr_y_val = int(top_right_y[i])
 
-			br_x_val = str(bottom_right_x[i])
-			br_y_val = str(bottom_right_y[i])
+			br_x_val = int(bottom_right_x[i])
+			br_y_val = int(bottom_right_y[i])
 
-			tl_x_val = str(top_left_x[i])
-			tl_y_val = str(top_left_y[i])
+			tl_x_val = int(top_left_x[i])
+			tl_y_val = int(top_left_y[i])
 
-			result['Bay'][0]['geometry'] = \
-					[\
+			result['Bay'][i]['geometry'] = [\
 
 						{\
 						  "x": bl_x_val,\
@@ -130,10 +122,10 @@ def geometry_calculator(bottom_left_x, bottom_left_y, top_right_x, top_right_y, 
 			#print(result)
 
 		# convert to string
-		result = str(result)
+		#result = str(result)
 
 		# replace ' with "
-		# result = result.replace("'", '"')
+		#result = result.replace("'", '"')
 
 	
 		# return json.dumps(result)
@@ -156,13 +148,15 @@ df['Label'] = df.apply(lambda row: geometry_calculator(bottom_left_x = row['bott
 
 
 # convert to json
-# df['Label'] = df['Label'].apply(lambda x: x if x =='Skip' else json.loads(x))
+df['Label'] = df['Label'].apply(lambda x: x if x =='Skip' else json.dumps(x))
 
 # make new cols
 df['ID'] = 'test'
 df['ID'] = df['ID'].apply(lambda text: uuid.uuid4())
 df['filename'] = df.index
+#df['External ID'] = df['filename'].apply(lambda text: text.split('.txt')[0] if 'txt' in text else text)
 df['External ID'] = df['filename']
+
 
 # drop cols
 select_cols = ['ID', 'Label', 'External ID']
@@ -176,10 +170,11 @@ if os.path.exists('dataset_with_json_column_and_id_added.csv'):
 	os.remove('dataset_with_json_column_and_id_added.csv')
 
 # write to csv
-
 print(df['Label'].head(50))
 #df.to_csv('dataset_with_json_column_and_id_added.csv', header=True, index=None, sep=',', mode='a', quoting = csv.QUOTE_NONE,escapechar='\\')
-
 df.to_csv('dataset_with_json_column_and_id_added.csv', header=True, index=None, sep=',', mode='a')
+
+check = df[df['Label']!='Skip']
+print(len(check))
 
 
