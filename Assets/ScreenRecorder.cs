@@ -1,6 +1,11 @@
 using UnityEngine;
  using System.Collections;
  using System.IO;
+
+ // root camera position:
+ // x = -59
+ // z = -100
+ // y = 374.7 (usually- this can change)
  
  // Screen Recorder will save individual images of active scene in any resolution and of a specific image format
  // including raw, jpg, png, and ppm.  Raw and PPM are the fastest image formats for saving.
@@ -330,7 +335,7 @@ using UnityEngine;
 
         double left_x = -60;
         double right_x = 450;
-        double top_z = -100.3;
+        double top_z = -97;
         double bottom_z =  -348;
 
         // go across
@@ -341,7 +346,7 @@ using UnityEngine;
             take_screenshot(captureScreenshot, captureVideo);
 
         }
-        else if (bottom_z<cam_pos.z && cam_pos.z<top_z) {
+        else if (bottom_z<=cam_pos.z && cam_pos.z<=top_z) {
 
             //move down by 38 points
             Vector3 new_pos = new Vector3 ((float)left_x, (float)Camera.main.transform.position.y,(float)(Camera.main.transform.position.z-38)); 

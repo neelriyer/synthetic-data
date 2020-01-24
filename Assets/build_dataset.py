@@ -8,8 +8,8 @@ SIZE_HEIGHT = 768
 
 
 # remove bad images
-import subprocess
-subprocess.run(['python', 'image_remover.py'])
+# import subprocess
+# subprocess.run(['python', 'image_remover.py'])
 
 
 def write_to_csv(df, path):
